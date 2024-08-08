@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@barba/core": "^2.9.7",
+    "firebase": "^10.12.5",
     "firebase-tools": "^11.8.1",
     "gsap": "^3.11.1"
   }
