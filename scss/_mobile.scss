@@ -1,0 +1,80 @@
+//  Widescreens
+@include mediaXl {
+}
+
+//  Desktops & Laptops
+@include mediaLg {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-template-areas: "card1 card2 card3" "card4 card5 card6" "card7 card8 .";
+  }
+}
+
+//  Tablets & Small Laptops
+@include mediaMd {
+  .fixed-header {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "logo site-title" "icons icons";
+
+    &--scrolled {
+      .icons {
+        display: none;
+      }
+    }
+  }
+
+  .main-title {
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  .subtitle {
+    width: 90%;
+    z-index: 998;
+  }
+
+  .resume-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "column1" "column2";
+    column-gap: 0;
+    align-content: center;
+    justify-content: center;
+    width: 100vw;
+    padding: 1rem;
+    margin: 0;
+  }
+  .col-1 {
+    grid-area: column1;
+    width: 100%;
+  }
+
+  .col-2 {
+    grid-area: column2;
+    width: 100%;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-template-areas: "card1 card2" "card3 card4" "card5 card6" "card7 card8";
+  }
+
+  .contact-btns {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 20px;
+    width: 60%;
+    margin: 2rem auto;
+  }
+}
+
+//  Smartphones
+@include mediaSm {
+  .card-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto, 1fr);
+    grid-template-areas: "card1" "card2" "card3" "card4" "card5" "card6" "card7" "card8";
+  }
+}

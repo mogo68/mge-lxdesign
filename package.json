@@ -1,0 +1,27 @@
+{
+  "name": "mge-lxdesign",
+  "version": "1.0.0",
+  "description": "MGE Portfolio Site",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w scss/:dist/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mogo68/mge-lxdesign.git"
+  },
+  "author": "Melissa Evans",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mogo68/mge-lxdesign/issues"
+  },
+  "homepage": "https://github.com/mogo68/mge-lxdesign#readme",
+  "devDependencies": {
+    "sass": "^1.54.9"
+  },
+  "dependencies": {
+    "@barba/core": "^2.9.7",
+    "firebase-tools": "^11.8.1",
+    "gsap": "^3.11.1"
+  }
+}
