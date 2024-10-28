@@ -194,30 +194,30 @@ wordWrapper.forEach((wordWrapper, index) => {
 });
 
 //Split Lines for Subtitles
-function setSplitSub() {
-  const splitSubTargets = gsap.utils.toArray(".sp-subtitle");
-  splitSubTargets.forEach((target) => {
-    let SplitSub = new SplitText(target, { type: "lines" });
-    let splitSubLines = SplitSub.lines; //an array of all the divs that wrap each character
-    gsap.from(splitSubLines, {
-      y: 150,
-      opacity: 0,
-      stagger: 0.1,
-      duration: 1,
-      ease: "back.inOut",
-      scrollTrigger: {
-        trigger: target,
-        // markers: {
-        //   startColor: "purple",
-        //   endColor: "fuchsia",
-        //   fontSize: "1.5rem",
-        // },
-        start: "top bottom",
-        end: "bottom center",
-        scrub: true,
-      },
-    });
-  });
-}
+// function setSplitSub() {
+//   const splitSubTargets = gsap.utils.toArray(".sp-subtitle");
+//   splitSubTargets.forEach((target) => {
+//     let SplitSub = new SplitText(target, { type: "lines" });
+//     let splitSubLines = SplitSub.lines; //an array of all the divs that wrap each character
+//     gsap.from(splitSubLines, {
+//       y: 150,
+//       opacity: 0,
+//       stagger: 0.1,
+//       duration: 1,
+//       ease: "back.inOut",
+//       scrollTrigger: {
+//         trigger: target,
+//         // markers: {
+//         //   startColor: "purple",
+//         //   endColor: "fuchsia",
+//         //   fontSize: "1.5rem",
+//         // },
+//         start: "top bottom",
+//         end: "bottom center",
+//         scrub: true,
+//       },
+//     });
+//   });
+// }
 
-setSplitSub();
+// setSplitSub();
