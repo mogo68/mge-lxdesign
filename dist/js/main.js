@@ -176,22 +176,20 @@ btnFade.forEach((container) => {
 });
 
 // Animated Text for Subtitle //////////////////////////////////////////
-const wordWrapper = gsap.utils.toArray(".word-wrapper");
+//const wordWrapper = gsap.utils.toArray(".word-wrapper");
 
-let mainWordsTL = new gsap.timeline({
-  repeat: -1,
-});
+//let mainWordsTL = new gsap.timeline({
+//repeat: -1,});
 
-wordWrapper.forEach((wordWrapper, index) => {
-  let animatedWords = wordWrapper.querySelector(".words");
-  let tlWords = gsap
-    .timeline()
-    .set(animatedWords, { yPercent: -110, opacity: 0 })
-    .to(animatedWords, { opacity: 1, yPercent: 0 }, 0.8)
-    .to(animatedWords, { delay: 0.8, opacity: 0, yPercent: 110 });
-
-  mainWordsTL.add(tlWords, index * 1.5);
-});
+//wordWrapper.forEach((wordWrapper, index) => {
+//let animatedWords = wordWrapper.querySelector(".words");
+//  let tlWords = gsap
+//    .timeline()
+//   .set(animatedWords, { yPercent: -110, opacity: 0 })
+//   .to(animatedWords, { opacity: 1, yPercent: 0 }, 0.8)
+//    .to(animatedWords, { delay: 0.8, opacity: 0, yPercent: 110 });
+//
+//  mainWordsTL.add(tlWords, index * 1.5);});
 
 //Split Lines for Subtitles
 // function setSplitSub() {
