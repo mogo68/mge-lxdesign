@@ -324,7 +324,7 @@ body {
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(auto, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "card1 card2 card3" "card4 card5 card6";
   grid-gap: 15px;
   padding: 2rem;
