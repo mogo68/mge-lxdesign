@@ -321,7 +321,7 @@ body {
 }
 .subtitle h2 {
   font-family: "Lato", sans-serif;
-  font-size: clamp(1.5rem, 1.1429rem + 0.7143vw, 2rem);
+  font-size: clamp(1rem, 1.1429rem + 0.7143vw, 1.5rem);
   font-weight: 300;
   letter-spacing: -0.02em;
   text-transform: uppercase;
@@ -335,7 +335,7 @@ body {
   z-index: -2;
 }
 .subtitle .animated-text-wrapper .static-text {
-  padding-right: 0.5rem;
+  padding-right: 0;
 }
 .subtitle .animated-text-wrapper .word-wrapper {
   position: absolute;
